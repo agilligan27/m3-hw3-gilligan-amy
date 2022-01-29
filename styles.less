@@ -9,24 +9,36 @@
 @black-bb: #050500;
 @red-bb: #ee252f;
 @white-bb: #f3f3f3;
+@font-bb: 'Roboto', sans-serif;
 
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: @font-bb;
     font-size: 16px;
     color: @black-bb;
     font-weight: 400;
 }  
 
+h2 {
+    font-family: @font-bb;
+    font-size: 30px;
+    color: @black-bb;
+    font-weight: 500px;
+}
+
+span {
+    color: @red-bb;
+}
+
 .link {
-    font-family: 'Roboto', sans-serif;
+    font-family: @font-bb;
     font-size: 18px;
     font-weight: 500px;
     color: @black-bb;
 }
 
 .navUppercase {
-    font-family: 'Roboto', sans-serif;
+    font-family: @font-bb;
     color: @red-bb;
 }
 
@@ -58,7 +70,11 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center, bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-    .logo {
-    }
+ .logo {
+     width: 40%;
+ }
