@@ -53,7 +53,16 @@ button {
     padding: 2%;
     .link;
     margin-bottom: 12px;
+    @media(min-width: 1000px) {
+        padding: 1%;
+    }
 }
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 
 /*header styles */
 
@@ -83,6 +92,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 1000px){
+        padding: 60px 0;
+    }
 
 }
  .logo {
@@ -127,6 +139,9 @@ nav {
 footer {
     background-color: @black-bb;
     padding: 75px 0;
+    @media (min-width: 800px){
+        padding: 40px 0;
+    }
 }
     .flex-3 {
         display: flex;
@@ -135,6 +150,7 @@ footer {
     }
         .logo_footer{
             width: 40%;
+            max-width: 300px;
         }
 
 
