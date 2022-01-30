@@ -55,7 +55,7 @@ button {
     margin-bottom: 12px;
 }
 
-/*Mobile header styles */
+/*header styles */
 
 nav {
     background-color: @yellow-bb;
@@ -63,6 +63,9 @@ nav {
 }
     ul{
         text-align: center;
+        @media (min-width: 800px) {
+            text-align: left;
+        }
     }
         li {
             display: inline;
@@ -88,15 +91,21 @@ nav {
      max-width: 400px;
  }
 
- /*Mobile Main Styles */
+ /*Main Styles */
+
+ 
 
  section{
      padding: 3%;
  }
+   
     .flex-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (min-width: 800px){
+            flex-direction: row;
+        }
     }
 
 .section_2{
@@ -106,10 +115,14 @@ nav {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        @media (min-width: 800px){
+            flex-direction: row;
+        
+        }
     }
 
 
-/*Mobile Footer Styles */
+/*Footer Styles */
 
 footer {
     background-color: @black-bb;
@@ -123,3 +136,7 @@ footer {
         .logo_footer{
             width: 40%;
         }
+
+
+
+
