@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-/* Site-Wide styles */
+
+
+/* Variables */
 
 @yellow-bb: #f8df1f;
 @black-bb: #050500;
@@ -11,13 +13,14 @@
 @white-bb: #f3f3f3;
 @font-bb: 'Roboto', sans-serif;
 
+/* Site-Wide styles */
 
 p {
     font-family: @font-bb;
     font-size: 16px;
     color: @black-bb;
     font-weight: 400;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }  
 
 h2 {
@@ -43,7 +46,7 @@ h2 {
 }
 
 span {
-    .navUppercase;
+    .navUppercase; /* Mix-in example */
 }
 
 button {
@@ -51,7 +54,7 @@ button {
     border-radius: 8px;
     border: none;
     padding: 2%;
-    .link;
+    .link; /* Mix-in example */
     margin-bottom: 12px;
     @media(min-width: 1000px) {
         padding: 1%;
@@ -136,6 +139,9 @@ nav {
             flex-direction: row;
         
         }
+    }
+    .section-image {
+        padding: 0 100px;
     }
 
 
