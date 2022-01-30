@@ -17,6 +17,7 @@ p {
     font-size: 16px;
     color: @black-bb;
     font-weight: 400;
+    margin-bottom: 12px;
 }  
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
     font-size: 30px;
     color: @black-bb;
     font-weight: 500px;
+    margin: 8px 0;
 }
 
 span {
@@ -48,6 +50,7 @@ button {
     border: none;
     padding: 2%;
     .link;
+    margin-bottom: 12px;
 }
 
 /*Mobile header styles */
@@ -56,7 +59,9 @@ nav {
     background-color: @yellow-bb;
     padding: 35px 0;
 }
-    ul
+    ul{
+        text-align: center;
+    }
         li {
             display: inline;
             padding: 3%;
@@ -76,5 +81,38 @@ nav {
 
 }
  .logo {
-     width: 40%;
+     width: 50%;
  }
+
+ /*Mobile Main Styles */
+
+ section{
+     padding: 3%;
+ }
+    .flex-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+/*Mobile Footer Styles */
+
+footer {
+    background-color: @black-bb;
+    padding: 50px 0;
+}
+    .flex-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .logo_footer{
+            width: 40%;
+        }
